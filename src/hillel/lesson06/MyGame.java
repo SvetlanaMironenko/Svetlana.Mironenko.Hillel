@@ -5,18 +5,13 @@ public class MyGame {
     public static void main(String[] args) {
         PokerCards pCards = new PokerCards();
 
-        Player playerOne = new Player("Nikolas");
-        Player playerTwo = new Player("Pedro");
-        Player playerThree = new Player("Daniil");
-        Player playerFour = new Player("Andrian");
-
         PokerGame game = new PokerGame();
         game.registerCards(pCards);
 
-        game.registerPlayer(playerOne);
-        game.registerPlayer(playerTwo);
-        game.registerPlayer(playerThree);
-        game.registerPlayer(playerFour);
+        game.registerPlayer(new Player("Nikolas"))
+                .registerPlayer(new Player("Pedro"))
+                .registerPlayer(new Player("Daniil"))
+                .registerPlayer(new Player("Andrian"));
 
         System.out.println("1. Prepare for game");
         game.prepareForGame();
