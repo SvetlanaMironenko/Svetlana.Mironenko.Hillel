@@ -29,6 +29,9 @@ public class PokerCards {
     }
 
     public String giveNextCard() {
+        if (cardIndex > totalCards.length - 1) {
+            throw new RuntimeException("No more cards for game!");
+        }
         String currentCard = totalCards[cardIndex];
         cardIndex++;
         return currentCard;
