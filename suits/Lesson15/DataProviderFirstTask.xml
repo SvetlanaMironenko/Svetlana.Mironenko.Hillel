@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="DataProviderFirstTask" verbose="1" >
+    <groups>
+        <run>
+            <include name="loginGroup"/>
+        </run>
+    </groups>
+    <test name="DataProviderFirstTask">
+        <classes>
+            <class name="tests.Lesson15.ClassWithMyTestsLesson15"/>
+        </classes>
+    </test>
+</suite>
