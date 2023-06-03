@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParamTest" verbose="1">
+    <test name="ParamTest">
+        <parameter name="domain" value="google.com"/>
+        <parameter name="language" value="us"/>
+        <classes>
+            <class name="tests.Lesson15.ParamTest">
+                <methods>
+                    <include name="testWithParameters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ParamTest2">
+        <parameter name="domain" value="google.ua"/>
+        <parameter name="language" value="ua"/>
+        <classes>
+            <class name="tests.Lesson15.ParamTest">
+                <methods>
+                    <include name="testWithParameters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

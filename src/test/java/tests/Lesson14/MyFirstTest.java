@@ -1,4 +1,4 @@
-package tests;
+package tests.Lesson14;
 
 import hillel.lesson08.Logger;
 import org.testng.annotations.Test;
