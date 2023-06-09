@@ -15,11 +15,29 @@ public class Logger {
     }
 
     public static void info(String message) {
-        printMessage(Color.GREEN, "INFO", message);
+        printMessage(Color.RESET, "INFO", message);
     }
 
     public static void warning(String message) {
         printMessage(Color.YELLOW, "WARNING", message);
+    }
+
+    public static void fail(String message) {
+        printMessage(Color.RED, "FAILED", message);
+        throw new RuntimeException(message);
+    }
+
+    public static void step(String message) {
+        printMessage(Color.GREEN, "STEP", message);
+    }
+
+    public static void wait(int sec, String message) {
+        printMessage(Color.GREEN, "WAIT", message);
+        try {
+            Thread.sleep(sec * 1000L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

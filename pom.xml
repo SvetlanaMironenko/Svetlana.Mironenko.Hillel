@@ -14,6 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <fakerVersion>1.0.2</fakerVersion>
         <testNGVersion>7.8.0</testNGVersion>
+        <selenimVersion>4.9.1</selenimVersion>
+        <webdrivermanager>5.3.3</webdrivermanager>
     </properties>
 
     <dependencies>
@@ -27,6 +29,16 @@
             <artifactId>testng</artifactId>
             <version>${testNGVersion}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenimVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager}</version>
         </dependency>
     </dependencies>
 
