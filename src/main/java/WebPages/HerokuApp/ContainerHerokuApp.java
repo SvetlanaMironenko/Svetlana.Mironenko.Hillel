@@ -2,6 +2,7 @@ package WebPages.HerokuApp;
 
 import WebPages.HerokuApp.ChallengingDOMPage.ChallengingDOMPage;
 import WebPages.HerokuApp.CheckBoxesPage.CheckBoxesPage;
+import WebPages.HerokuApp.HoversPage.HoversPage;
 import WebPages.HerokuApp.LoginPage.LoginPage;
 import common.BaseContainer;
 import common.Project;
@@ -17,5 +18,7 @@ public class ContainerHerokuApp extends BaseContainer {
     public LoginPage loginPage = new LoginPage(project);
 
     public CheckBoxesPage checkBoxesPage = new CheckBoxesPage(project);
+
+    public HoversPage hoversPage = new HoversPage(project);
 
 }

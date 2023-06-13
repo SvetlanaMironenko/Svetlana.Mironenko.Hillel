@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestsLesson18" verbose="1">
+    <test name="TestsLesson18">
+        <classes>
+            <class name="tests.Lesson18.TestsForLesson18">
+                <methods>
+                    <include name="testDragAndDrop"/>
+                    <include name="testHoverMenu"/>
+                    <include name="testHoversNameUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
