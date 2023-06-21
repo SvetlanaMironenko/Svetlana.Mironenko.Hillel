@@ -1,11 +1,11 @@
 package WebPages.CrossBrowserTesting.MoveElementPage;
 
-import common.BasePage;
+import common.CommonPage;
 import common.Project;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class DragAndDropPage extends BasePage {
+public class DragAndDropPage extends CommonPage {
 
 
     public DragAndDropPage(Project project) {

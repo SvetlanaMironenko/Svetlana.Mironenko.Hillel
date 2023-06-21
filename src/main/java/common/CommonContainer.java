@@ -1,10 +1,10 @@
 package common;
 
-public class BaseContainer {
+public class CommonContainer {
 
     protected Project project = null;
 
-    public BaseContainer(Project webApp) {
+    public CommonContainer(Project webApp) {
         this.project = webApp;
     }
 

@@ -9,13 +9,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BasePage {
+public class CommonPage {
 
     static protected Project web = null;
 
     protected Map<String, String> locatorsList = new HashMap<>();
 
-    public BasePage(Project project) {
+    public CommonPage(Project project) {
         web = project;
     }
 

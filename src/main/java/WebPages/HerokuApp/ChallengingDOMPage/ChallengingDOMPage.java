@@ -1,10 +1,10 @@
 package WebPages.HerokuApp.ChallengingDOMPage;
 
-import common.BasePage;
+import common.CommonPage;
 import common.Project;
 import hillel.lesson08.Logger;
 
-public class ChallengingDOMPage extends BasePage {
+public class ChallengingDOMPage extends CommonPage {
 
     public ChallengingDOMPage(Project project) {
         super(project);
