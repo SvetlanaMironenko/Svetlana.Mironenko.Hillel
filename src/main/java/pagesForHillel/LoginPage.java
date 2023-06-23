@@ -1,6 +1,5 @@
 package pagesForHillel;
 
-import common.Project;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,9 +18,9 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[@class='flash error']")
     private WebElement loginErrorMessage;
 
-    public LoginPage(Project project) {
-        super(project);
-        PageFactory.initElements(project.getDriver(), this);
+    public LoginPage() {
+        super();
+        PageFactory.initElements(web.getDriver(), this);
     }
 
     public LoginPage fillCredentials(String username, String password) {
@@ -32,7 +31,7 @@ public class LoginPage extends BasePage {
 
     public SecurePage clickLoginButton() {
         clickButton(loginButtonElement);
-        return new SecurePage(web);
+        return new SecurePage();
     }
 
     public LoginPage loginWithInvalidCreed() {

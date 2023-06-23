@@ -17,8 +17,8 @@ public class BasePage {
     protected JavascriptExecutor javascriptExecutor;
 
 
-    public BasePage(Project project) {
-        web = project;
+    public BasePage() {
+        web = Project.getInstance();
         webDriverWait = new WebDriverWait(web.getDriver(), Duration.ofSeconds(5));
         actions = new Actions(web.getDriver());
         javascriptExecutor = (JavascriptExecutor)web.getDriver();

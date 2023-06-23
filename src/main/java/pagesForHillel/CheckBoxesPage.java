@@ -1,6 +1,5 @@
 package pagesForHillel;
 
-import common.Project;
 import hillel.lesson08.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,10 +10,6 @@ public class CheckBoxesPage extends BasePage {
 
     private String checkboxes = "//*[@type='checkbox']";
     private String curCheckbox = "//*[@type='checkbox'][#number#]";
-
-    public CheckBoxesPage(Project project) {
-        super(project);
-    }
 
     public CheckBoxesPage displayDefaultCheckboxesStatus() {
         List<WebElement> myElements = web.getDriver().findElements(By.xpath(checkboxes));

@@ -16,7 +16,7 @@ public class TestsForLesson20 extends BaseTest {
 
         Logger.step("2. Fill login and password " +
                 "3. Click login");
-        MainPage mainPage = new MainPage(web);
+        MainPage mainPage = new MainPage();
         SecurePage securePage = mainPage.clickToOpenFormAuthenticationPage()
                 .fillCredentials("tomsmith", "SuperSecretPassword!")
                 .clickLoginButton();
@@ -38,7 +38,7 @@ public class TestsForLesson20 extends BaseTest {
 
         Logger.step("2. Fill login and password" +
                 "3. Click login");
-        MainPage mainPage = new MainPage(web);
+        MainPage mainPage = new MainPage();
         LoginPage loginPage = mainPage.clickToOpenFormAuthenticationPage()
                 .fillCredentials("tom", "SuperSecretPassword!")
                 .loginWithInvalidCreed();
@@ -55,7 +55,7 @@ public class TestsForLesson20 extends BaseTest {
 
         Logger.step("2. Click on buttons" +
                 "3. Display table elements");
-        MainPage mainPage = new MainPage(web);
+        MainPage mainPage = new MainPage();
         mainPage.clickToOpenChallengingDOMPage()
                 .clickButtons()
                 .displayTableElements();
@@ -69,7 +69,7 @@ public class TestsForLesson20 extends BaseTest {
 
         Logger.step("2.1. Display default checkboxes status" +
                 "2.2. Select all checkboxes");
-        MainPage mainPage = new MainPage(web);
+        MainPage mainPage = new MainPage();
         mainPage.clickToOpenCheckBoxesPage()
                 .displayDefaultCheckboxesStatus()
                 .selectAllCheckboxes();
@@ -82,7 +82,7 @@ public class TestsForLesson20 extends BaseTest {
         Logger.wait(1, "wait for load");
 
         Logger.step("2. Click dropdown menu");
-        MainPage mainPage = new MainPage(web);
+        MainPage mainPage = new MainPage();
         mainPage.clickToOpenHoversPage().scrollToUsersAndGetName();
     }
 }

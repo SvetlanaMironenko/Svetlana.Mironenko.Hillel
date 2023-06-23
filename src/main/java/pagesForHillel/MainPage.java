@@ -1,32 +1,27 @@
 package pagesForHillel;
 
-import common.Project;
 import org.openqa.selenium.By;
 
 public class MainPage extends BasePage {
 
-    public MainPage(Project project) {
-        super(project);
-    }
-
     public LoginPage clickToOpenFormAuthenticationPage() {
         web.getDriver().findElement(By.linkText("Form Authentication")).click();
-        return new LoginPage(web);
+        return new LoginPage();
     }
 
     public ChallengingDOMPage clickToOpenChallengingDOMPage() {
         web.getDriver().findElement(By.linkText("Challenging DOM")).click();
-        return new ChallengingDOMPage(web);
+        return new ChallengingDOMPage();
     }
 
     public CheckBoxesPage clickToOpenCheckBoxesPage() {
         web.getDriver().findElement(By.linkText("Checkboxes")).click();
-        return new CheckBoxesPage(web);
+        return new CheckBoxesPage();
     }
 
     public HoversPage clickToOpenHoversPage() {
         web.getDriver().findElement(By.linkText("Hovers")).click();
-        return new HoversPage(web);
+        return new HoversPage();
     }
 
 }

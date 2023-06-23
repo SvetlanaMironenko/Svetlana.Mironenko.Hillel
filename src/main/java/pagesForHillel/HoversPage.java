@@ -1,6 +1,5 @@
 package pagesForHillel;
 
-import common.Project;
 import hillel.lesson08.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -14,10 +13,6 @@ public class HoversPage extends BasePage {
     private String curUserLocator = "//*[@class='figure'][#number#]";
     private String usersLocator = "//*[@class='figure']";
     private String curNameUserLocator = "//*[@class='figure'][#number#]//*[@class='figcaption']/h5";
-
-    public HoversPage(Project project) {
-        super(project);
-    }
 
     public HoversPage scrollToUsersAndGetName() {
         List<WebElement> myElements = web.getDriver().findElements(By.xpath(usersLocator));

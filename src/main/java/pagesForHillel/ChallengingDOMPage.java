@@ -1,6 +1,5 @@
 package pagesForHillel;
 
-import common.Project;
 import hillel.lesson08.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -13,10 +12,6 @@ public class ChallengingDOMPage extends BasePage {
     private String buttons = "//*[contains(@class,'button')]";
     private String curTableElement = "//tr[#number#]//td[4]";
     private String tableElements = "//tr//td[4]";
-
-    public ChallengingDOMPage(Project project) {
-        super(project);
-    }
 
     public ChallengingDOMPage clickButtons() {
         List<WebElement> myElements = web.getDriver().findElements(By.xpath(buttons));
