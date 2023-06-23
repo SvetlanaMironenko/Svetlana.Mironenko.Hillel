@@ -31,9 +31,7 @@ public class CommonTest {
     }
 
     private void initProject() {
-        if (web == null) {
-            web = new Project();
-        }
+        web = Project.getInstance();
     }
 
     private void initPages() {
