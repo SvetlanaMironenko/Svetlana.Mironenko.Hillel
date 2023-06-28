@@ -24,4 +24,14 @@ public class MainPage extends BasePage {
         return new HoversPage();
     }
 
+    public DownloadPage clickToOpenDownloadPage() {
+        web.getDriver().findElement(By.linkText("File Download")).click();
+        return new DownloadPage();
+    }
+
+    public UploadPage clickToOpenUploadPage() {
+        web.getDriver().findElement(By.linkText("File Upload")).click();
+        return new UploadPage();
+    }
+
 }

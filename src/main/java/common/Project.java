@@ -4,6 +4,11 @@ import hillel.lesson08.Logger;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Project {
 
@@ -34,7 +39,13 @@ public class Project {
     public void initDriver() {
         if (getInstance().driver == null) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+
+            ChromeOptions options = new ChromeOptions();
+            Map<String, Object> prefs = new HashMap<String, Object>();
+            prefs.put("download.default_directory", new File("target/downloads").getAbsolutePath());
+            options.setExperimentalOption("prefs", prefs);
+
+            driver = new ChromeDriver(options);
             driver.manage().window().maximize();
         }
     }

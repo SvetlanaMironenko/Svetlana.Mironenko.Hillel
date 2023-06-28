@@ -12,26 +12,23 @@ public class CommonTest {
     static protected ContainerOfPages pages = null;
 
     public CommonTest() {
-        initProject();
+        web = Project.getInstance();
     }
 
     @BeforeSuite
     public void beforeSuite() {
+        web.initDriver();
         initPages();
     }
 
     @AfterSuite
     public void afterSuite() {
-        web.getDriver().quit();
+        web.closeDriver();
     }
 
     @AfterMethod
     public void afterMethod() {
         Logger.wait(2, "Wait 2 sec at finish to see browser");
-    }
-
-    private void initProject() {
-        web = Project.getInstance();
     }
 
     private void initPages() {
