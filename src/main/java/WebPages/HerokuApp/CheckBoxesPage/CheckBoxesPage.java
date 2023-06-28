@@ -1,10 +1,10 @@
 package WebPages.HerokuApp.CheckBoxesPage;
 
-import common.BasePage;
+import common.CommonPage;
 import common.Project;
 import hillel.lesson08.Logger;
 
-public class CheckBoxesPage extends BasePage {
+public class CheckBoxesPage extends CommonPage {
 
     public CheckBoxesPage(Project project) {
         super(project);

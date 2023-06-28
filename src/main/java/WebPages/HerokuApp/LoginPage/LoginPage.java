@@ -1,9 +1,9 @@
 package WebPages.HerokuApp.LoginPage;
 
-import common.BasePage;
+import common.CommonPage;
 import common.Project;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends CommonPage {
 
     public LoginPage(Project project) {
         super(project);

@@ -1,13 +1,13 @@
 package WebPages.HerokuApp.HoversPage;
 
-import common.BasePage;
+import common.CommonPage;
 import common.Project;
 import hillel.lesson08.Logger;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
-public class HoversPage extends BasePage {
+public class HoversPage extends CommonPage {
 
 
     public HoversPage(Project project) {

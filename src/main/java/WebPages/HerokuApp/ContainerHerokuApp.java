@@ -4,10 +4,10 @@ import WebPages.HerokuApp.ChallengingDOMPage.ChallengingDOMPage;
 import WebPages.HerokuApp.CheckBoxesPage.CheckBoxesPage;
 import WebPages.HerokuApp.HoversPage.HoversPage;
 import WebPages.HerokuApp.LoginPage.LoginPage;
-import common.BaseContainer;
+import common.CommonContainer;
 import common.Project;
 
-public class ContainerHerokuApp extends BaseContainer {
+public class ContainerHerokuApp extends CommonContainer {
 
     public ContainerHerokuApp(Project project) {
         super(project);

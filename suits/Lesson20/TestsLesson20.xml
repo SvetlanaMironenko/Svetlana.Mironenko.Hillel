@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestsLesson20" verbose="1">
+    <test name="TestsLesson20">
+        <classes>
+            <class name="tests.lessonHillel20.TestsForLesson20">
+                <methods>
+                    <include name="testClickEachButtonChallengingDOMNew"/>
+                    <include name="testHoversNameUserNew"/>
+                    <include name="testWithCheckboxesNew"/>
+                    <include name="testNegativeLoginNew"/>
+                    <include name="testPositiveLoginNew"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

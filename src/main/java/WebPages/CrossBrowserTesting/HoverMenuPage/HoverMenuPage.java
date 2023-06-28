@@ -1,12 +1,12 @@
 package WebPages.CrossBrowserTesting.HoverMenuPage;
 
-import common.BasePage;
+import common.CommonPage;
 import common.Project;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
-public class HoverMenuPage extends BasePage {
+public class HoverMenuPage extends CommonPage {
 
 
     public HoverMenuPage(Project project) {

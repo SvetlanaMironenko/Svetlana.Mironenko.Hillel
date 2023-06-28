@@ -2,10 +2,10 @@ package WebPages;
 
 import WebPages.CrossBrowserTesting.ContainerCrossBrowserTesting;
 import WebPages.HerokuApp.ContainerHerokuApp;
-import common.BaseContainer;
+import common.CommonContainer;
 import common.Project;
 
-public class ContainerOfPages extends BaseContainer {
+public class ContainerOfPages extends CommonContainer {
 
     public ContainerOfPages(Project project) {
         super(project);
