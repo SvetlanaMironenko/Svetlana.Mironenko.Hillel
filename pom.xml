@@ -16,6 +16,7 @@
         <testNGVersion>7.8.0</testNGVersion>
         <selenimVersion>4.9.1</selenimVersion>
         <webdrivermanager>5.3.3</webdrivermanager>
+        <selenideVersion>6.15.0</selenideVersion>
     </properties>
 
     <dependencies>
@@ -39,6 +40,11 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenideVersion}</version>
         </dependency>
     </dependencies>
 

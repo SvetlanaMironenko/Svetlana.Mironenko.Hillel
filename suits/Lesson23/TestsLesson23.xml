@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestsLesson23" verbose="1">
+    <test name="TestsLesson23">
+        <classes>
+            <class name="tests.lessonHillel23FileSelenide.DownloadAndUploadTestsSelenide">
+                <methods>
+                    <include name="DownloadAndUploadFileTest"/>
+                </methods>
+            </class>
+            <class name="tests.lessonHillel23FileSelenide.DynamicallyLoadedTestsSelenide">
+                <methods>
+                    <include name="DynamicallyLoadedElementsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
