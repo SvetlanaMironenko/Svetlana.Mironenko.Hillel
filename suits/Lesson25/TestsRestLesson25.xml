@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestsRestLesson25" verbose="1">
+<suite name="TestsRestLesson25" verbose="1" parallel="false">
     <test name="TestsRestLesson25">
         <classes>
             <class name="api.PetStoreApiTests"></class>

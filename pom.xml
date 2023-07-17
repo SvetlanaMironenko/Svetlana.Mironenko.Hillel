@@ -84,7 +84,7 @@
                 <version>3.1.0</version>
                 <configuration>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                        <suiteXmlFile>suits/Lesson25/TestsRestLesson25.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
