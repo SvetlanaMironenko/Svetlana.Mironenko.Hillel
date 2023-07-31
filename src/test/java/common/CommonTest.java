@@ -2,10 +2,13 @@ package common;
 
 import WebPages.ContainerOfPages;
 import hillel.lesson08.Logger;
+import listeners.CustomExtentReportListener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
+@Listeners({CustomExtentReportListener.class})
 public class CommonTest {
 
     static protected Project web = null;
